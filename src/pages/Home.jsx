@@ -3,6 +3,7 @@ import Banner from "../components/Banner";
 import PopularGames from "../components/PopularGames";
 import Newsletter from "../components/Newsletter";
 import { useLoaderData } from "react-router";
+import BannerSlider from "../components/BannerSlider";
 
 const Home = () => {
   const allGames = useLoaderData();
@@ -13,7 +14,8 @@ const Home = () => {
 
   return (
     <div className="space-y-20">
-      <Banner></Banner>
+      {/* <Banner></Banner> */}
+      <BannerSlider className=""></BannerSlider>
 
       <PopularGames mostPopular={mostPopular}></PopularGames>
 

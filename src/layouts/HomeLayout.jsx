@@ -5,11 +5,11 @@ import Footer from "../components/HomeLayout/Footer";
 
 const HomeLayout = () => {
   return (
-    <div className="bg-primary">
+    <div className="bg-purple-900">
       <header>
         <Navbar></Navbar>
       </header>
-      <main className="min-h-screen">
+      <main className="">
         <Outlet></Outlet>
       </main>
       <footer>

@@ -6,10 +6,18 @@
 @plugin "daisyui/theme" {
   name: "light";
   default: true;
-  --color-primary: #0f1b33;
+  --color-primary: #000033;
   --color-secondary: #0a1630;
   --color-accent: #172740;
   --color-neutral: #ffa826;
+}
+
+.slider-full-container {
+  @apply space-y-5 text-white bg-black/40 bg-blend-darken bg-no-repeat bg-cover min-h-[500px] flex flex-col justify-center items-center;
+}
+
+.slider-head {
+  @apply text-5xl leading-16 md:text-6xl lg:text-7xl lg:leading-[85px] xl:text-8xl xl:leading-24  font-black;
 }
 
 a.active {

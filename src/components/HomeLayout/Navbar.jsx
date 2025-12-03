@@ -56,7 +56,12 @@ const Navbar = () => {
     </>
   );
   return (
-    <nav className="bg-accent text-white">
+    <nav
+      style={{
+        boxShadow: "rgba(26, 15, 63, 0.71) 0px 12px 29px 0px",
+      }}
+      className=" bg-linear-to-b from-[#cf15f8] to-[#5f16a9] text-white "
+    >
       <div className="navbar shadow-sm w-5/6 mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
