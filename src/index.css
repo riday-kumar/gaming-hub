@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default;
+}
+
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #0f1b33;
+  --color-secondary: #0a1630;
+  --color-accent: #172740;
+  --color-neutral: #ffa826;
+}
+
+a.active {
+  @apply text-neutral font-bold;
+}
+
+.card-ft {
+  background-color: #15233e;
+  min-height: 180px;
+}
+
+.footer-bg {
+  background-image: url("./assets/wartank.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.section-bg {
+  background-image: url("./assets/racing.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
