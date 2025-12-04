@@ -38,10 +38,14 @@ const Navbar = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink className="text-[18px] md:text-[20px]">Tournament</NavLink>
+        <NavLink className="text-[18px] md:text-[20px]" to="/tournament">
+          Tournament
+        </NavLink>
       </li>
       <li>
-        <NavLink className="text-[18px] md:text-[20px]">Contact Us</NavLink>
+        <NavLink className="text-[18px] md:text-[20px]" to="contact-us">
+          Contact Us
+        </NavLink>
       </li>
       {user ? (
         ""

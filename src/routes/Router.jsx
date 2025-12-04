@@ -12,6 +12,8 @@ import Profile from "../pages/Profile";
 import ErrorPage from "../pages/ErrorPage";
 import PrivateRoute from "./PrivateRoute";
 import Loading from "../components/Loading";
+import Tournament from "../pages/Tournament";
+import ContactUs from "../pages/ContactUs";
 
 export const router = createBrowserRouter([
   {
@@ -68,6 +70,14 @@ export const router = createBrowserRouter([
             <UpdateProfile></UpdateProfile>
           </PrivateRoute>
         ),
+      },
+      {
+        path: "/tournament",
+        Component: Tournament,
+      },
+      {
+        path: "/contact-us",
+        Component: ContactUs,
       },
     ],
   },

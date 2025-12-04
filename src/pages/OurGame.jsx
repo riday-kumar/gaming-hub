@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import PageHeading from "../components/PageHeading";
 import trending from "../assets/tranding.jpg";
 import Newsletter from "../components/Newsletter";
@@ -6,12 +6,44 @@ import { Link, useLoaderData } from "react-router";
 
 const OurGame = () => {
   const allGames = useLoaderData();
+  const [games, setGames] = useState([]);
+
+  useEffect(() => {
+    setGames(allGames);
+  }, [allGames]);
+
+  const handleSort = (e) => {
+    const sortType = e.target.value;
+
+    const sorted = [...games].sort((a, b) => {
+      if (sortType === "asc") {
+        return a.title.localeCompare(b.title); // A → Z
+      }
+      if (sortType === "desc") {
+        return b.title.localeCompare(a.title); // Z → A
+      }
+      return 0;
+    });
+
+    setGames(sorted);
+  };
 
   return (
     <div className="space-y-20">
       <PageHeading heading={"Our Game"}></PageHeading>
+      <div className="w-5/6 mx-auto">
+        <select
+          defaultValue="Sort My Interests"
+          className="select appearance-none"
+          onChange={handleSort}
+        >
+          <option disabled={true}>Sort By Game Title</option>
+          <option value="asc">Sort by Title (A-Z)</option>
+          <option value="dec">Sort by Title (Z-A)</option>
+        </select>
+      </div>
       <div className="w-11/12 md:w-5/6 mx-auto grid grid-cols-12 md:gap-10">
-        {allGames.map((game) => (
+        {games.map((game) => (
           <div
             key={game.id}
             className="max-md:mb-10 relative rounded-2xl bg-accent col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 text-white"
