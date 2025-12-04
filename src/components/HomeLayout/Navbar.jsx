@@ -37,6 +37,12 @@ const Navbar = () => {
           Our Game
         </NavLink>
       </li>
+      <li>
+        <NavLink className="text-[18px] md:text-[20px]">Tournament</NavLink>
+      </li>
+      <li>
+        <NavLink className="text-[18px] md:text-[20px]">Contact Us</NavLink>
+      </li>
       {user ? (
         ""
       ) : (
@@ -60,7 +66,7 @@ const Navbar = () => {
       style={{
         boxShadow: "rgba(26, 15, 63, 0.71) 0px 12px 29px 0px",
       }}
-      className=" bg-linear-to-b from-[#cf15f8] to-[#5f16a9] text-white "
+      className="bg-linear-to-b from-[#cf15f8] to-[#5f16a9] text-white "
     >
       <div className="navbar shadow-sm w-5/6 mx-auto">
         <div className="navbar-start">

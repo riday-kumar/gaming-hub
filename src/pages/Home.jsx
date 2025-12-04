@@ -4,6 +4,9 @@ import PopularGames from "../components/PopularGames";
 import Newsletter from "../components/Newsletter";
 import { useLoaderData } from "react-router";
 import BannerSlider from "../components/BannerSlider";
+import JoinCommunity from "../components/JoinCommunity";
+import Focus from "../components/Focus";
+import Blog from "../components/Blog";
 
 const Home = () => {
   const allGames = useLoaderData();
@@ -18,6 +21,8 @@ const Home = () => {
       <BannerSlider className=""></BannerSlider>
 
       <PopularGames mostPopular={mostPopular}></PopularGames>
+      <Focus></Focus>
+      <Blog></Blog>
 
       <Newsletter></Newsletter>
     </div>

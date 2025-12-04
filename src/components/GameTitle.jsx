@@ -1,13 +1,13 @@
 import React from "react";
-
+import bg from "../assets/detailBg.jpg";
 const GameTitle = ({ heading, coverPhoto }) => {
   return (
     <div
       style={{
-        backgroundImage: `url(${coverPhoto})`,
+        backgroundImage: `url(${bg})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        backgroundPosition: "top center",
+        backgroundPosition: "center",
       }}
       className=" py-20 text-white  md:py-32  bg-blend-overlay bg-[#15397284]"
     >

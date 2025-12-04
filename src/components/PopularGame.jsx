@@ -27,7 +27,7 @@ const PopularGame = ({ game }) => {
           <div className="border-8 rounded-md border-purple-700">
             <img className="h-96 w-full" src={coverPhoto} alt="" />
           </div>
-          <div className="bg-[#5768d9] text-white absolute -bottom-32 left-0 right-0 p-10 rounded-lg w-[90%] mx-auto grid xl:grid-cols-2 justify-items-center xl:justify-items-end">
+          <div className="bg-[#5768d9] text-white absolute -bottom-48 lg:-bottom-32 left-0 right-0 p-10 rounded-lg w-[90%] mx-auto grid xl:grid-cols-2 justify-items-center xl:justify-items-end">
             <div className="space-y-2">
               <p className="text-[25px] font-bold">{title}</p>
 

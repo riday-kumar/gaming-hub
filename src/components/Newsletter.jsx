@@ -7,7 +7,7 @@ const Newsletter = () => {
       initial={{ x: -1000 }}
       animate={{ x: 0 }}
       transition={{ duration: 5, ease: "easeOut" }}
-      className="bg-secondary py-20 md:py-[150px] flex justify-center items-center"
+      className="bg-[url(https://i.ibb.co.com/ymFkcjGV/about.png)] bg-no-repeat bg-left bg-purple-900 bg-blend-darken py-20 md:py-[150px] flex justify-center items-center"
     >
       <div>
         <p className="mb-10 text-center text-4xl md:text-5xl font-bold text-white">

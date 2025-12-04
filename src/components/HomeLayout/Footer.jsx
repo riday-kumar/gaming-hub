@@ -9,8 +9,7 @@ const Footer = () => {
       initial={{ y: -400 }}
       animate={{ y: 0 }}
       transition={{ duration: 6.5, ease: "easeOut" }}
-      className=" pt-16 footer-bg text-white bg-blend-overlay bg-[#153972]"
-      style={{ backgroundImage: `url(${wartank})` }}
+      className=" pt-16 text-white  bg-[#000033]"
     >
       <div className="w-5/6 pb-10 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center items-center max-lg:gap-10">
         <div>
